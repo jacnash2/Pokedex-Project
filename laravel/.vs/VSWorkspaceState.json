@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public\\js",
+    "\\resources\\js",
+    "\\resources\\views"
+  ],
+  "SelectedNode": "\\env('APP_ENV'",
+  "PreviewInSolutionExplorer": false
+}
