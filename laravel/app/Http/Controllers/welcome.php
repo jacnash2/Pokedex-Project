@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 class welcome extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 }

@@ -15,12 +15,12 @@ class HomeController extends Controller
      */
 
      //require log in
-     /*
+     
     public function __construct()
     {
         $this->middleware('auth');
     }
-    /*
+    
     
     /**
      * Show the application dashboard.

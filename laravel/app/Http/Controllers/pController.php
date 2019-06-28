@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 class pController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function capture(Request $request)
     {
         request()->validate(['captureId' => 'required|integer']);

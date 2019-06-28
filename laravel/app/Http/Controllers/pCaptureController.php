@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class pCaptureController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $capturedPokemon = \App\pokedex_user::where('user_id', \Auth::user()->id)->orderBy('pokemon_id', 'asc')->get();
